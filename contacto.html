@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="icon" href="./imagenes/icono-blanco.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="stylesheet" href="./css/tablet.css" media="screen and (max-width: 800px)" />
+  <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 480px)" />
+  <script src="./scripts/html5shiv.js"></script>
+  <script src="./scripts/prefixfree.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <a href="index.html">Inicio</a>
+    </div>
+    <nav>
+      <div class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu">
+        <li><a class=" menu-link" href="index.html">Inicio</a></li>
+        <li class="menu-link menu-info"><span class="arrow_icon"></span> Información
+          <div>
+            <ul class="sub-menu sub-menu-info">
+              <li><a class="menu-link" href="informacion.html">Ubicación e historia</a></li>
+              <li><a class="menu-link" href="informacion.html#geografia-clima">Geografía y clima</a></li>
+              <li><a class="menu-link" href="informacion.html#bandera-idioma-demografia">Bandera</a></li>
+              <li><a class="menu-link" href="informacion.html#bandera-idioma-demografia">Idioma y demografía</a></li>
+            </ul>
+          </div>
+
+        </li>
+        <li class="menu-link menu-turismo"><span class="arrow_icon"></span> Turismo
+          <div>
+            <ul class="sub-menu sub-menu-turismo">
+              <li><a class="menu-link" href="turismo.html">Puntos Turisticos</a></li>
+              <li><a class="menu-link" href="turismo.html#vivid-sydney">Festival Vivid Sydney</a></li>
+              <li><a class="menu-link" href="turismo.html#BlueMountain">Parque Nac. Montañas Azules</a></li>
+              <li><a class="menu-link" href="turismo.html#Ku-ring-gai">Parque Nac. Ku-Ring-Gai Chase</a></li>
+              <li><a class="menu-link" href="turismo.html#manly">Playa Manly</a></li>
+              <li><a class="menu-link" href="turismo.html#laopera">La Ópera de Sídney</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="contacto.html" class="menu-link nav-activo">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mb-10">
+    <section id="seccion-contacto" class="container-centrado">
+      <h1>Contactate con nosotros</h1>
+      <div class="container">
+        <div class="formBx">
+          <form action="procesarFormulario.php" method="post">
+            <div class="inputBox">
+              <input type="text" required="required" autocomplete="off" name="nombre" />
+              <span>Nombre completo</span>
+            </div>
+            <div class="inputBox">
+              <input type="email" autocomplete="off" required="required" name="email" />
+              <span>Dirección de Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea required="required" name="mensaje"></textarea>
+              <span>Dejanos tu mensaje...</span>
+            </div>
+            <div class="inputMultiSelect">
+              <div class="certificadoFile">
+                <label for="certificado">Agregar certificado de vacunación:</label>
+                <input type="file" id="certificado" name="certificado" accept="image/png, image/jpeg">
+              </div>
+            </div>
+            <div class="inputMultiSelect">
+              <h2>¿Deseas recibir Información?</h2>
+              <div class="inputCheck">
+                <span>Noticias</span>
+                <input type="checkbox" name="noticias" />
+                <span>Futuros eventos</span>
+                <input type="checkbox" name="eventos" />
+              </div>
+            </div>
+            <div class="inputBox">
+              <input type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+        <div class="imgBx">
+          <picture>
+            <source srcset="./imagenes/tablet/img-contacto-t.jpg" media="(max-width: 800px)" />
+            <img src="./imagenes/desktop/img-contacto.jpg" alt="el Ayuntamiento rodeado de muchos turistas caminando"
+              class="shadow-light-blue" />
+          </picture>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer class="footer-contacto">
+    <div>
+      <div><a id="logo-davinci" href="https://davinci.edu.ar/" target="_blank">Escuela Da Vinci</a></div>
+      <div id="datos-tp">
+        <ul class="lista-sin-estilo">
+          <li>Asignatura: Maquetado y Desarrollo Web</li>
+          <li>Profesora: Mabel García</li>
+          <li>Alumnos: Gonzalez Chavez Pedro &#38; Scotto Rocío Belén</li>
+          <li>DWN1B - Maquetado y Desarrollo Web - TP2 - Primer Cuatrimestre - Año 2022</li>
+        </ul>
+      </div>
+
+      <div id="alineado-derecha">
+
+        <ul class="lista-sin-estilo">
+          <li class="mayuscula">
+            <h2 class="h2-sin-estilo">Fuentes utilizadas</h2>
+          </li>
+          <li><a href="https://weather-and-climate.com/average-monthly-Rainfall-Temperature-Sunshine,Sydney,Australia"
+              target="_blank" class="hiperv-sin-estilo">Wheather and Climate</a></li>
+          <li><a href="https://australiayotraspasiones.com/" target="_blank" class="hiperv-sin-estilo">Australia y otras
+              pasiones</a></li>
+          <li><a href="https://es.wikipedia.org/wiki/S%C3%ADdney" target="_blank"
+              class="hiperv-sin-estilo">Wikipedia</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="linea-footer1"></div>
+    <ul id="redes">
+      <li><a href="https://www.facebook.com/sydney" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com/sydney/" target="_blank">Instagram</a></li>
+      <li><a href="https://www.youtube.com/user/seesydney" target="_blank">YouTube</a></li>
+      <li><a href="https://ar.pinterest.com/seesydney/_created/" target="_blank">Pinterest</a></li>
+      <li><a href="https://twitter.com/sydney_sider" target="_blank">Tweeter</a></li>
+      <li><a href="https://www.tiktok.com/@sydney" target="_blank">TicToc</a></li>
+    </ul>
+    <div class="linea-footer2"></div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
