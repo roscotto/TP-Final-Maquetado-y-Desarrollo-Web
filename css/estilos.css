@@ -1,0 +1,1038 @@
+:root {
+  --deep-blue: #002f6c;
+  --blue: #01579b;
+  --light-blue: #bbdefb;
+  --new-light-blue: #41e0df;
+  --light-sand: #fff8e1;
+  --dark-sand: #ccc5af;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mayuscula {
+  text-transform: uppercase;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: var(--new-light-blue);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+
+#logo {
+  padding: 15px 15px 15px 50px;
+  width: 95px;
+  height: 79px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 16%;
+  background-image: url("../imagenes/icono-blanco.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0px;
+}
+
+#logo a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 2em;
+  margin: -2em;
+  width: 95px;
+  height: 79px;
+}
+
+header nav {
+  max-width: 80%;
+  display: inline-block;
+  margin-left: 35%;
+  vertical-align: top;
+  margin-top: 30px;
+}
+
+header nav ul {
+  width: 350px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  position: relative;
+}
+
+header nav ul li {
+  list-style: none;
+  margin-right: 30px;
+  color: #000;
+  margin-top: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+
+}
+
+header nav ul .menu-info,
+header nav ul .menu-turismo {
+  background-image: url(../imagenes/arrow_down.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-y: top;
+  padding-left: 30px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+header nav ul li:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 2px;
+
+}
+
+.nav-activo {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 2px;
+  color: rgb(255, 255, 255);
+}
+
+
+.sub-menu {
+  position: absolute;
+  background-color: var(--new-light-blue);
+  display: none;
+}
+
+.sub-menu li a {
+  display: block;
+  padding: 10px;
+}
+
+.menu li:hover .sub-menu {
+  display: block;
+}
+
+/*.arrow_icon{
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../imagenes/arrow_down.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}*/
+main {
+  width: 100vw;
+  min-width: 1200px;
+  background-color: #FFF;
+  /* align-items: center;
+  justify-content: center; */
+  margin: 0 auto;
+  /* background-repeat: no-repeat;
+  background-position: center;
+  overflow: auto; */
+}
+
+main p {
+  padding: 20px;
+
+}
+
+#inicio {
+  width: 1200;
+  background-image: url("../imagenes/desktop/fondo-inicio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 800px;
+}
+
+.img-home-superpuesta {
+  margin-top: -120px;
+}
+
+.container-centrado {
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+.container-centrado-h1 {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.shadow-light-blue {
+  box-shadow: 27px 26px 0px -1px #41e0df;
+  -webkit-box-shadow: 27px 26px 0px -1px #41e0df;
+  -moz-box-shadow: 27px 26px 0px -1px #41e0df;
+}
+
+#principal {
+  color: #fff;
+  margin-left: -60px;
+  text-align: center;
+  padding: 0;
+  font-size: 0px;
+}
+
+#texto-principal {
+  width: 44%;
+  height: 250px;
+  margin-top: -13px;
+  color: #000;
+  padding: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  padding: 40px 20px 20px 20px;
+  font-size: 60px;
+
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 50px;
+  text-align: left;
+  line-height: 65px;
+}
+
+
+
+.img-centrada {
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.boton {
+  text-transform: uppercase;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 18px;
+  padding-top: 20px;
+  width: 147px;
+  height: 48px;
+  display: inline-block;
+  background-image: url(../imagenes/fondo-boton.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.boton-blanco {
+  text-transform: uppercase;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 500px;
+  padding-top: 20px;
+  width: 147px;
+  height: 48px;
+  display: block;
+  background-image: url(../imagenes/fondo-boton-blanco.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 90%;
+}
+
+.boton a,
+.boton-blanco a,
+.boton-blanco-gracias a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none !important;
+  color: #000;
+  font-weight: 700;
+  width: 147px;
+  height: 41px;
+}
+
+.boton-inverse {
+  text-transform: uppercase;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 18px;
+  padding-top: 20px;
+  margin-left: 470px;
+  margin-top: -80px;
+  width: 147px;
+  height: 48px;
+  display: inline-block;
+  background-image: url(../imagenes/fondo-boton.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.boton-inverse a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 147px;
+  height: 41px;
+  text-decoration: none !important;
+  color: #000;
+  font-weight: 700;
+}
+
+
+#turismo-home .wrap-blanco div .boton {
+  margin-left: -155px;
+}
+
+figcaption {
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+}
+
+.fig-max-width {
+  width: 700px;
+}
+
+.flecha_bajo {
+  display: none;
+}
+
+#fondo-mapa {
+  background-image: url(../imagenes/desktop/mapa-australia.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 383px;
+  height: 383px;
+  padding-top: 100px;
+  padding-left: 60px;
+}
+
+#turismo-home {
+  background-image: url(../imagenes/desktop/fondo-olas.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1200px;
+  height: 500px;
+  padding-top: 774px;
+  margin: 0 auto;
+}
+
+.wrap-blanco {
+  background-color: #FFF;
+  width: 1000px;
+  height: 400px;
+  margin: auto;
+}
+
+.wrap-blanco div {
+  width: 500px;
+  display: inline-block;
+  float: left;
+}
+
+#espectacular-sidney {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  background-color: var(--light-sand);
+  height: 900px;
+}
+
+#espectacular-sidney p {
+  padding-right: 40px;
+}
+
+#espectacular-sidney img {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+#seccion-vivid-en-index {
+  background-image: url(../imagenes/desktop/eventos-home.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1200px;
+  height: 600px;
+  text-align: center;
+}
+
+#seccion-vivid-en-index p {
+  width: 480px;
+  display: inline-block;
+  text-align: center;
+
+}
+
+.texto-blanco {
+  color: #FFF;
+  text-shadow: 1px 1px #000;
+  text-align: center;
+}
+
+
+/*--------------------------------------------- INICIO FOOTER -----------------------------------------------*/
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: var(--light-sand);
+  color: var(--light-sand);
+  position: absolute;
+  color: #000;
+
+}
+
+.linea-footer1 {
+  background-image: url(../imagenes/linea_footer.png);
+  background-repeat: repeat-x;
+  height: 3px;
+  margin-top: -90px;
+}
+
+.linea-footer2 {
+  background-image: url(../imagenes/linea_footer.png);
+  background-repeat: repeat-x;
+  height: 3px;
+  margin-top: 15px;
+}
+
+#logo-davinci {
+  display: inline-block;
+  background: url(../imagenes/logo-davinci.png);
+  width: 300px;
+  height: 105px;
+  font-size: 0px;
+  float: left;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#redes {
+  margin-left: 38%;
+}
+
+#redes li {
+  display: inline-block;
+  padding: 0px 10px 0px 10px;
+}
+
+#redes li a {
+  display: inline-block;
+  background: url(../imagenes/sprite-redes.png);
+  width: 50px;
+  height: 50px;
+  font-size: 0px;
+}
+
+
+#redes li:nth-child(1) a:hover {
+  background-position: 0 -50px;
+}
+
+#redes li:nth-child(2) a {
+  background-position: -50px 0px;
+}
+
+#redes li:nth-child(2) a:hover {
+  background-position: -50px -50px;
+}
+
+#redes li:nth-child(3) a {
+  background-position: -100px 0px;
+}
+
+#redes li:nth-child(3) a:hover {
+  background-position: -100px -50px;
+}
+
+#redes li:nth-child(4) a {
+  background-position: -150px 0px;
+}
+
+#redes li:nth-child(4) a:hover {
+  background-position: -150px -50px;
+}
+
+#redes li:nth-child(5) a {
+  background-position: -200px 0px;
+}
+
+#redes li:nth-child(5) a:hover {
+  background-position: -200px -50px;
+}
+
+#redes li:nth-child(6) a {
+  background-position: -250px 0px;
+}
+
+#redes li:nth-child(6) a:hover {
+  background-position: -250px -50px;
+}
+
+
+footer ul {
+  display: inline-block;
+
+}
+
+footer p,
+ul {
+  display: inline-block;
+}
+
+.logo-davinci,
+.datos-tp {
+  display: inline-block;
+  float: left;
+  padding: 20px;
+}
+
+.lista-sin-estilo {
+  list-style: none;
+}
+
+.hiperv-sin-estilo {
+  text-decoration: none;
+  color: #000;
+}
+
+#alineado-derecha {
+  float: right;
+  display: inline-block;
+  padding: 30px;
+  text-align: right;
+}
+
+#datos-tp {
+  display: inline-block;
+  float: left;
+  margin: 0 auto;
+  padding: 30px;
+
+}
+
+/*--------------------------------------------- FIN FOOTER -----------------------------------------------*/
+
+.font-azul {
+  color: var(--new-light-blue);
+}
+
+/* #ubicacion-historia{
+  height: 600px;
+ } */
+
+#bandera-idioma-demografia {
+  /* height: 630px; */
+  margin-top: 50px;
+}
+
+#instituciones-culturales {
+  height: 630px;
+}
+
+#geografia-clima {
+  overflow: auto;
+  background-color: var(--light-sand);
+}
+
+#geografia-clima .columna-2 blockquote,
+#geografia-clima .columna-2 p,
+#bandera-idioma-demografia .columna-1 p {
+  width: 550px;
+
+}
+
+#laopera {
+  margin-top: 20px;
+}
+
+.font-cent {
+  text-align: center;
+
+}
+
+.columna-1,
+.columna-2 {
+  display: inline-block;
+  float: left;
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+
+.img-ubic-historia {
+  padding: 50px 50px 50px 30px;
+}
+
+.img-geografia {
+  margin: 50px 50px 50px 50px;
+}
+
+.strong-sin-estilos,
+.em-sin-estilos {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.boton-volver-arriba {
+  padding: 20px 20px 117px 20px;
+  margin-bottom: 30px;
+  background-image: url(../imagenes/icono-arriba.png);
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  position: relative;
+}
+
+#boton-volver-arriba-info {
+  padding: 20px 20px 117px 20px;
+  margin-bottom: 30px;
+  background-image: url(../imagenes/icono-arriba.png);
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  position: relative;
+  margin-top: 690px;
+}
+
+.mt-150 {
+  margin-top: -150px;
+}
+
+.h2-sin-estilo {
+  font-size: 18px;
+  padding: 0px;
+  text-align: right;
+  line-height: 25px;
+}
+
+/*------------------------------------- INICIO PAGINA DE INFORMACION ----------------------------------------*/
+#img-final-info {
+  background-image: url(../imagenes/desktop/img-final-info.jpg);
+  height: 493px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 89px;
+  margin-top: -100px;
+}
+
+/*------------------------------------------ FIN DE INFORMACION ---------------------------------------------*/
+
+
+
+/*------------------------------------------ PAGINA DE CONTACTO ---------------------------------------------*/
+#seccion-contacto {
+  background-color: var(--light-sand);
+  height: 77vh;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+
+}
+
+#seccion-contacto h1 {
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .formBx {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .formBx form {
+  position: relative;
+  width: 100%;
+  padding: 0 0 0 75px;
+}
+
+.container .formBx form .inputBox {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.container .formBx form .inputBox:last-child {
+  margin-bottom: 0px;
+}
+
+.container .formBx form .inputBox input,
+.container .formBx form .inputBox textarea {
+  position: relative;
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  /* color: #fff;  */
+  padding-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-bottom: 2px solid rgba(1, 87, 154, 0.5);
+  resize: none;
+}
+
+.container .formBx form .inputBox textarea {
+  height: 100px;
+}
+
+.container .formBx form .inputBox input[type="submit"] {
+
+  padding: 8px 20px;
+  margin-top: -10px;
+  width: 147px;
+  cursor: pointer;
+  background-image: url(../imagenes/fondo-boton.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  text-transform: uppercase;
+
+}
+
+.container .formBx form .inputBox input[type="submit"]:focus {
+  background: var(--blue);
+  color: #fff;
+}
+
+.container .formBx form .inputBox span {
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-block;
+  pointer-events: none;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 0.2s;
+}
+
+.container .formBx form .inputBox input:focus~span,
+.container .formBx form .inputBox textarea:focus~span,
+.container .formBx form .inputBox input:valid~span,
+.container .formBx form .inputBox textarea:valid~span {
+  transform: translateY(-24px);
+  /* color: #1bfaad; */
+  font-size: 14px;
+}
+
+.container .formBx form .inputBox input:focus,
+.container .formBx form .inputBox textarea:focus,
+.container .formBx form .inputBox input:valid,
+.container .formBx form .inputBox textarea:valid {
+  border-bottom-color: rgba(0, 47, 108, 0.8);
+}
+
+.container .inputMultiSelect {
+  margin-bottom: 40px;
+}
+
+.container .inputMultiSelect .inputCheck {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.container .inputMultiSelect h2 {
+  font-size: 25px;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.container .inputMultiSelect h2 input[type=checkbox] {
+  margin-bottom: 25px;
+}
+
+.container .imgBx {
+  position: relative;
+  width: 50%;
+  height: 111%;
+
+
+}
+
+input[type="file"] {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.container .imgBx img {
+  position: absolute;
+  bottom: 0;
+  max-height: 95%;
+  margin-left: 80px;
+
+}
+
+.mb-10 {
+  margin-bottom: 10%;
+}
+
+/*------------------------------------------ FIN PAGINA DE CONTACTO ------------------------------------------*/
+/*-----------------------------------------          TURISMO        ------------------------------------------*/
+.mb-90 {
+  margin-bottom: 90px;
+}
+
+.mb-5 {
+  margin-bottom: 5%;
+}
+
+.card {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.card .card-body {
+  display: flex;
+}
+
+.card .card-body .card-text {
+  width: 50%;
+}
+
+.card .card-body .card-image {
+  width: 458px;
+  height: 337px;
+  box-shadow: 27px 26px 0px -1px #41e0df;
+  -webkit-box-shadow: 27px 26px 0px -1px #41e0df;
+  -moz-box-shadow: 27px 26px 0px -1px #41e0df;
+}
+
+.inverse {
+  width: 458px;
+  height: 337px;
+  box-shadow: -27px 26px 0px -1px #41e0df !important;
+  -webkit-box-shadow: -27px 26px 0px -1px #41e0df !important;
+  -moz-box-shadow: -27px 26px 0px -1px #41e0df !important;
+}
+
+.card .card-body .card-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-footer {
+  margin-left: 20px;
+}
+
+.card-footer button {
+  width: 120px;
+  height: 50px;
+  font-weight: 700;
+  background: #41e0df;
+  border-radius: 42px;
+  border: none;
+}
+
+.card-footer button a {
+  text-decoration: none;
+}
+
+#BlueMountain:nth-child(3) {
+  margin-bottom: 50px;
+}
+
+.card-image iframe {
+  border-width: 0;
+}
+
+#top-5 {
+  background-color: var(--light-sand);
+  overflow: auto;
+}
+
+#top-5 h2 {
+  text-align: center;
+}
+
+#top-5 p {
+  font-size: 20px;
+  padding: 20px;
+}
+
+#top-5 ol {
+  margin-left: 30%;
+  font-size: 20px;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+/* COLUMNAS TOP 5*/
+
+.columna1top {
+  display: inline-block;
+  float: left;
+  width: 645px;
+  margin-bottom: 50px;
+}
+
+.columna2top {
+  display: inline-block;
+  float: left;
+  width: 500px;
+  margin-bottom: 80px;
+  margin-left: 40px;
+}
+
+ol li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*--------------------------------------          TURISMO, FIN   ------------------------------------------*/
+
+/*--------------------------------------           ANCLAS, INICIO   ------------------------------------------*/
+#vivi-sydney {
+  margin-bottom: 0;
+}
+
+#BlueMountain {
+  margin-top: 0;
+}
+
+#ubicacion-historia::before,
+#geografia-clima::before,
+#bandera-idioma-demografia::before,
+#BlueMountain::before,
+#vivid-sydney::before,
+#Ku-ring-gai::before,
+#manly::before,
+#laopera::before,
+#conoce-sidney::before {
+  content: "";
+  height: 120px;
+  display: block;
+  visibility: hidden;
+  margin-top: -120px;
+}
+
+/*--------------------------------------           ANCLAS, INICIO   ------------------------------------------*/
+
+
+/*--------------------------------------           VIVID SYDNEY, INICIO   ------------------------------------------*/
+
+#inicio-vivid {
+  width: 1200;
+  background-image: url(../imagenes/desktop/fondo-vivid-sydney.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 800px;
+}
+
+#inicio-vivid h1 {
+  font-size: 0px;
+}
+
+#seccion-cards-vivid {
+  margin-bottom: 200px;
+}
+
+#img-final-vivid {
+  background-image: url(../imagenes/desktop/img-final-vivid.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 89px;
+  margin-top: -100px;
+}
+
+.modal {
+  max-width: 850px !important;
+  margin-top: 150px;
+}
+
+.modal img {
+  display: inline-block;
+  margin-left: 20%;
+  padding: 20px 0px 20px 0px;
+}
+
+.modal h2 {
+  text-align: center;
+}
+
+.modal p {
+  padding: 15px;
+}
+
+/*--------------------------------------          VIVID SYDNEY, FIN   ------------------------------------------*/
+
+/*--------------------------------------          GRACIAS, INICIO   ------------------------------------------*/
+#gracias {
+  width: 1200;
+  background-image: url("../imagenes/desktop/gracias-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 800px;
+  padding-top: 100px;
+}
+
+.bloque-blanco-transp {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 4px 2px #000;
+  padding: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 720px;
+  height: 250px;
+
+}
+
+.h2-centrado {
+  text-align: center;
+}
+
+.p-destacado-blanco {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/*--------------------------------------          GRACIAS, FIN   ------------------------------------------*/
